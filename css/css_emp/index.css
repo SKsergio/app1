@@ -1,0 +1,78 @@
+/* card */
+.card{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: "Quattrocento Sans", sans-serif;
+}
+.card_header{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    background-color: rgb(79 179 113 / 30%);
+    border: 1px rgb(54, 124, 138) solid;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_body{
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+/* tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+/* botones */
+.btn{
+    display: inline-block;
+    background-color: #2a1c79; 
+    color: #fff; 
+    padding: 9px 17px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    border: none;
+}
+.btn_edit{
+    background-color: #15b175; 
+}
+.btn_delet{
+    background-color: rgb(216, 33, 33);
+}
+.btn_cart{
+    background-color: #41b115; 
+}
+/* hover de los botones */
+.btn:hover {
+    background-color: #4940cc; /* Cambio de color al pasar el mouse */
+}
+.btn_edit:hover{
+    background-color: #1c7c57; 
+}
+.btn_delet:hover{
+    background-color: rgb(133, 38, 38);
+}
+.btn_cart:hover{
+    background-color: #296611; 
+}

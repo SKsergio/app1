@@ -1,0 +1,100 @@
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .form__field {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #0c0b57;
+    outline: 0;
+    font-size: 17px;
+    color: #258a74;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #38ef7e, #289911);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #167c63;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+.frm_con{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card_header h3{
+    margin-left: 10px;
+}
+.form{
+    margin-left: 15px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+#foto, #CV, #idpuesto, #fech{
+    background-color: rgba(92, 207, 153, 0.507);
+    border-radius: 0 0 10px 0;
+}
+.docs_lbl, .opt_lbl{
+    font-size: 17px;
+    color: #9b9b9b;
+}
+.doc_form{
+    font-size: 15px;
+}
+.opt, .fecha{
+    height: 34px;
+    border: 2px solid rgb(24, 155, 133);
+}
+.botno{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -60px;
+}

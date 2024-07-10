@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&family=Quattrocento+Sans&display=swap");
+
+:root{
+    --color-primary:linear-gradient(315deg, #1a273e 16%, #4a6c8c 52%, #5d51a5 91%);;
+    --color-secundary:linear-gradient(315deg, #0d4b17 14%, #37b64f 47%, #2e6b52 88%);;
+    --color-third:linear-gradient(315deg, #247331 14%, #2e6b52 88%);;
+    --color-fourth:yellow;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+.content__head{
+    width: 100%;
+    background: var(--color-secundary);
+    border-radius: 0 0 10px 10px;
+}
+/* contenedores del menu */
+.container_nav{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+/* hamburguer */
+.nav_hamburguer{
+    width: 38px;
+    height: 30px;
+    background-image: url(../css/img/icon-menu.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    transition: background-image .8s;
+    display: none;
+}
+/* liksss */
+.nav_overlay{
+    width: 100%;
+    position: unset;
+    flex: 1;
+}
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    font-family: "Quattrocento Sans", sans-serif;
+    gap: 3em;
+    list-style: none;
+    align-items: center;
+}
+.nav_item{
+    cursor: pointer;
+    position: relative;
+}
+.nav_link, .login_sign{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* login */
+.nav__login{
+    margin-left: auto;
+    width: max-content;
+} 
+.login_sign{
+    display: inline-block;
+    padding: 13px 0;
+}
+.nav__login__border{
+    margin: 0;
+    padding: 0 1.5em;
+    border: 2px rgb(10, 163, 100) solid;
+    border-radius: 1em;
+}
